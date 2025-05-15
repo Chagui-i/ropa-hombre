@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuchiShopingOnline</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">JuchiShopingOnline</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Encuentra Tu Estilo</h1>
+            <p>Descubre las últimas tendencias en moda masculina</p>
+            <a href="#tienda" class="btn">Comprar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Sección de Tienda -->
+    <section id="tienda" class="shop">
+        <h2>Nuestra Colección</h2>
+        <div class="product-grid">
+            <!-- Productos generados por JavaScript -->
+        </div>
+    </section>
+
+    <!-- Modal del Carrito -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close">×</span>
+            <h2>Tu Carrito</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cart-total">0</span></h3>
+            </div>
+            <button class="btn checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>Ropa masculina de calidad para cada ocasión.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: soporte@juchishopingonline.com</p>
+                <p>Teléfono: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 JuchiShopingOnline. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
