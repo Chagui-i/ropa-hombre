@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de ropa masculina con camisas, jeans, chaquetas y zapatos. Descubre nuestra amplia colección.">
+    <meta name="keywords" content="ropa hombre, moda masculina, camisas, jeans, chaquetas, zapatos, tienda online">
     <title>JuchiShopingOnline</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -38,9 +40,16 @@
     <!-- Sección de Tienda -->
     <section id="tienda" class="shop">
         <h2>Nuestra Colección</h2>
-        <div class="product-grid">
-            <!-- Productos generados por JavaScript -->
+        <input type="text" id="search" placeholder="Buscar productos..." oninput="searchProducts()">
+        <div class="filters">
+            <button onclick="filterProducts('all')">Todos</button>
+            <button onclick="filterProducts('camisas')">Camisas</button>
+            <button onclick="filterProducts('jeans')">Jeans</button>
+            <button onclick="filterProducts('chaquetas')">Chaquetas</button>
+            <button onclick="filterProducts('zapatos')">Zapatos</button>
         </div>
+        <div class="product-grid"></div>
+        <div class="pagination"></div>
     </section>
 
     <!-- Modal del Carrito -->
@@ -65,7 +74,7 @@
             </div>
             <div class="footer-section">
                 <h3>Contacto</h3>
-                <p>Email: soporte@juchishopingonline.com</p>
+                <p>Email: soporte@JuchiShopingOnline.com</p>
                 <p>Teléfono: (123) 456-7890</p>
             </div>
             <div class="footer-section">
